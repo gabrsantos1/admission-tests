@@ -52,4 +52,41 @@ def mediaSimples():
         print(False)
 
 #mediaSimples()
-    
+
+def parOuImpar():
+    try:
+        valorUm = int(input("Digite o primeiro valor:"))
+        valorDois = int(input("Digite o segundo valor:"))
+        valorTres = int(input("Digite o terceiro valor:"))
+        valorQuatro = int(input("Digite o quarto valor:"))
+        valorCinco = int(input("Digite o quinto valor:"))
+        numerosPares = 0
+        
+        if valorUm != 0 and valorUm %2 == 0: 
+            numerosPares = numerosPares + 1
+
+        if valorDois != 0 and valorDois %2 == 0: 
+            numerosPares = numerosPares + 1
+
+        if valorTres != 0 and valorTres %2 == 0: 
+            numerosPares = numerosPares + 1
+
+        if valorQuatro != 0 and valorQuatro %2 == 0:
+            numerosPares = numerosPares + 1
+
+        if valorCinco != 0 and valorCinco %2 == 0:
+            numerosPares = numerosPares + 1
+
+        print(f"Número(s) pares: {numerosPares}")
+    except Exception:
+        print("Erro encontrado durante o processamento")
+
+#parOuImpar()
+
+def inverterString():
+    texto = input("Digite algo para ser invertido: ")
+    textoInvertido = texto[:: -1]
+
+    print(textoInvertido)
+
+#inverterString()
