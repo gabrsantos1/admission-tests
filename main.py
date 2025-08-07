@@ -129,3 +129,21 @@ def ordenarArray():
     print(f"Valor ordenados: {listaInputs}")
 
 #ordenarArray()
+
+def primeiroValorNaoRepetido():
+    valorUm = int(input("Digite o primeiro valor:"))
+    valorDois = int(input("Digite o segundo valor:"))
+    valorTres = int(input("Digite o terceiro valor:"))
+    valorQuatro = int(input("Digite o quarto valor:"))
+    valorCinco = int(input("Digite o quinto valor:"))
+    valorSeis = int(input("Digite o sexto valor:"))
+
+    listaInputs = [valorUm, valorDois, valorTres, valorQuatro, valorCinco, valorSeis]
+
+    for valor in listaInputs:
+        if listaInputs.count(valor) == 1:
+            print(f"Valor não repetido: {valor}")
+            return
+        
+#primeiroValorNaoRepetido()
+
