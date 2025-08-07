@@ -90,3 +90,42 @@ def inverterString():
     print(textoInvertido)
 
 #inverterString()
+
+def substituirCaracteres():
+    vogais = ['a', 'e', 'i', 'o', 'u']
+    palavra = input("Digite uma palavra: ")
+
+    palavra = palavra.lower()
+
+    for vogal in vogais:
+        palavra = palavra.replace(vogal, '?')
+
+    print(palavra)
+
+#substituirCaracteres()
+
+def ordenarArray():
+    valorUm = int(input("Digite o primeiro valor:"))
+    valorDois = int(input("Digite o segundo valor:"))
+    valorTres = int(input("Digite o terceiro valor:"))
+    valorQuatro = int(input("Digite o quarto valor:"))
+    valorCinco = int(input("Digite o quinto valor:"))
+    valorSeis = int(input("Digite o sexto valor:"))
+
+    listaInputs = [valorUm, valorDois, valorTres, valorQuatro, valorCinco, valorSeis]
+
+    for i in range(6):
+        if listaInputs[0] > listaInputs[1]:
+            listaInputs[0], listaInputs[1] = listaInputs[1], listaInputs[0]
+        if listaInputs[1] > listaInputs[2]:
+            listaInputs[1], listaInputs[2] = listaInputs[2], listaInputs[1]
+        if listaInputs[2] > listaInputs[3]:
+            listaInputs[2], listaInputs[3] = listaInputs[3], listaInputs[2]
+        if listaInputs[3] > listaInputs[4]:
+            listaInputs[3], listaInputs[4] = listaInputs[4], listaInputs[3]
+        if listaInputs[4] > listaInputs[5]:
+            listaInputs[4], listaInputs[5] = listaInputs[5], listaInputs[4]
+
+    print(f"Valor ordenados: {listaInputs}")
+
+#ordenarArray()
