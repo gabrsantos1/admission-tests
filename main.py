@@ -147,3 +147,18 @@ def primeiroValorNaoRepetido():
         
 #primeiroValorNaoRepetido()
 
+def manipulacaoArquivo():
+    condicao = 0
+
+    with open('data.dat', 'r') as linhasRetornadas:
+        for linhas in linhasRetornadas:
+            linhas = linhas.strip()
+
+            zero = linhas.count('0')
+            um = linhas.count('1')
+
+            if zero %3 == 0 or um %2 == 0:
+                condicao = condicao + 1
+    print(f"Linhas que atendem condição: {condicao}")
+
+#manipulacaoArquivo()
